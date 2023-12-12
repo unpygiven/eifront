@@ -15,7 +15,7 @@ function click()
     {
       text = "all"
     }
-    text = text.replaceAll(" ", "-");
+    text = text.replaceAll(" ", "-").replaceAll("ö", "o").replaceAll("ü", "u").replaceAll("ş", "s").replaceAll("ğ", "g").replaceAll("ı", "i").replaceAll("ç", "c");
     return text;
 }
 

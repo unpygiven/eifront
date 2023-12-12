@@ -3,7 +3,7 @@ import './globals.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import Head from 'next/head'
 
-//const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Eğlence sektörü',
