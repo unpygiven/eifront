@@ -19,7 +19,8 @@ export default function Page(props)
     {
         nextPage = nextPage - 1;
     }
-
+    const next = "->";
+    const prev = "<-";
     return (
         
         <Container style={{marginTop:'2%', marginBottom:'2%'}}>
@@ -27,9 +28,9 @@ export default function Page(props)
                 <Col></Col>
                 <Col>
                     <Row>
-                        <Col><a style={{margin: '0 auto', color: 'white'}} href={`/videos/${keywords}/${prevPage}`}><center>GERİ</center></a> </Col>
+                        <Col><a style={{margin: '0 auto', color: 'white'}} href={`/videos/${keywords}/${prevPage}`}><center>{prev}</center></a> </Col>
                         <Col><a style={{margin: '0 auto', color: 'white'}}><center>{currentPage}</center></a></Col>
-                        <Col><a style={{margin: '0 auto', color: 'white'}} href={`/videos/${keywords}/${nextPage}`}><center>İLERİ</center></a> </Col>
+                        <Col><a style={{margin: '0 auto', color: 'white'}} href={`/videos/${keywords}/${nextPage}`}><center>{next}</center></a> </Col>
                     </Row></Col>
                 <Col></Col>
             </Row>
