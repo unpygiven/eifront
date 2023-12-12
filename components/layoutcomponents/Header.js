@@ -15,7 +15,7 @@ function click()
     {
       text = "all"
     }
-    text = text.replace(' ', '-');
+    text = text.replaceAll(" ", "-");
     return text;
 }
 

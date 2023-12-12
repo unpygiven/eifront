@@ -8,7 +8,7 @@ export default function CategoryCard(props)
 {
 
     const category = props.category;
-    const catName = category.name.replace(" ", "-");
+    const catName = category.name.replaceAll(" ", "-");
     return (
       <a href={`/videos/${catName}/1`} style={{textDecoration: 'none'}}>
         <Card style={{ width: '18rem', margin: '0 auto', marginTop: '5%' }}>
