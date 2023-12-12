@@ -18,7 +18,7 @@ export default async function Home({params}) {
   
   return (
     <div style={{background: '#4A4A4A'}}>
-      <title>{"porno" + keywords}</title>
+      <title>{"porno-" + keywords}</title>
       <Header/>
       <VideoCarousel/>
       <Videos videos={data}/>
