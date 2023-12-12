@@ -5,6 +5,7 @@ import Header from '@/components/layoutcomponents/Header';
 import VideoCarousel from '@/components/videocomponents/Carousel';
 import Videos from '@/components/videocomponents/Videos';
 import Page from '@/components/videocomponents/Pages';
+import { getCategories } from '@/service/fetchdata';
 
 export default async function Home() {
   const data = await getVideos("all", 1);
