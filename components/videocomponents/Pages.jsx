@@ -23,13 +23,13 @@ export default function Page(props)
     return (
         
         <Container>
-            31
+            69
             <Row>
                 <Col></Col>
                 <Col>
                     <Row>
                         <Col><a style={{margin: '0 auto', color: 'white'}} href={`/videos/${keywords}/${prevPage}`}><center>GERİ</center></a> </Col>
-                        <Col xs={8}><a style={{margin: '0 auto', color: 'white'}}><center>{currentPage}</center></a></Col>
+                        <Col lg={8}><a style={{margin: '0 auto', color: 'white'}}><center>{currentPage}</center></a></Col>
                         <Col><a style={{margin: '0 auto', color: 'white'}} href={`/videos/${keywords}/${nextPage}`}><center>İLERİ</center></a> </Col>
                     </Row></Col>
                 <Col></Col>
