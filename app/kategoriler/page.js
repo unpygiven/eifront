@@ -6,7 +6,7 @@ export default async function Home()
 {
     const cats = await getCategories();
     return (
-        <div style={{background: '#4A4A4A'}}>
+        <div style={{background: 'black'}}>
           <title>{"kategoriler"}</title>
           <Header/>
           <Categories categories={cats}/>
