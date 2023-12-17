@@ -29,11 +29,6 @@ export default async function page({params})
                         return <a key={x.id} href={`/videos/${x.name}/1`} style={{color: 'white', marginLeft: '1%'}}><span style={{backgroundColor: 'black'}}>#{x.name}</span> </a>
                     })}
                 </div>
-                <div style={{marginTop: '2%', color: 'white'}}>
-                    <p>
-                        {video.text}
-                    </p>
-                </div>
                 <div style={{height: '2%', width: '100%', backgroundColor: 'black', marginTop: '2%', marginBottom: '2%'}}>*</div>
                 <div id="recomendedvideos" style={{marginTop: '2%'}}>
                     <h3 style={{color: 'white'}}>Önerilenler</h3>

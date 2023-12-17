@@ -9,7 +9,6 @@ import { getCategories } from '@/service/fetchdata';
 
 export default async function Home() {
   const data = await getVideos("all", 1);
-  
   return (
     <div style={{background: '#4A4A4A'}}>
       <Header/>
