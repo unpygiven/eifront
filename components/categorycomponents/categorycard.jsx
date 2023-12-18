@@ -12,7 +12,7 @@ export default function CategoryCard(props)
     return (
       <a href={`/videos/${catName}/1`} style={{textDecoration: 'none'}}>
         <Card style={{ width: '18rem', margin: '0 auto', marginTop: '5%' }}>
-          <Card.Img variant="top" src="https://e0.pxfuel.com/wallpapers/303/523/desktop-wallpaper-gibson-les-paul-guitar.jpg" />
+          <Card.Img variant="top" src={category.link} />
         </Card>
       </a>
       );
