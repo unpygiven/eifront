@@ -5,6 +5,7 @@ import VideoCarousel from '@/components/videocomponents/Carousel';
 import Videos from '@/components/videocomponents/Videos';
 import Page from '@/components/videocomponents/Pages';
 import { getOtd } from '@/service/fetchdata';
+import { resolve } from 'styled-jsx/css';
 
 export default async function Home({params}) {
     const keywords =  params.slug[0];
@@ -16,7 +17,6 @@ export default async function Home({params}) {
     {
       isLast = true;
     }
-  
   return (
     <div style={{background: 'black'}}>
       <title>{"porno-" + keywords}</title>
