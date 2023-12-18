@@ -11,7 +11,7 @@ export default async function page({params})
     video.keywords.map(function(x) {
         categories += x.name + '-';
     })
-
+    await new Promise(resolve => setTimeout(resolve, 3000))
     const recVideos = await getVideos(categories, 1);
     return(
         <>

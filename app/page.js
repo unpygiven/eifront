@@ -11,6 +11,7 @@ import { getOtd } from '@/service/fetchdata';
 export default async function Home() {
   const data = await getVideos("all", 1);
   const videosOTD = await getOtd();
+  await new Promise(resolve => setTimeout(resolve, 3000))
   return (
     <div style={{background: 'black'}}>
       <Header/>
