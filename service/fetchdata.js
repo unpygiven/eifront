@@ -19,4 +19,12 @@ async function getCategories()
     const res = await fetch(str, {cache: 'no-store'});
     return res.json();
 }
-export {getVideoById, getVideos, getCategories}
+
+async function getOtd()
+{
+    const str = `https://eddmundoo.pythonanywhere.com/api/videosotd/`;
+    const res = await fetch(str, {cache: 'no-store'});
+    return res.json();
+}
+
+export {getVideoById, getVideos, getCategories, getOtd}
