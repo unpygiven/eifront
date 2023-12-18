@@ -13,7 +13,7 @@ export default function VideoCard(props)
     return (
         <Card style={{ width: '18rem', margin: '0 auto', marginTop: '5%' }}>
           <a href={`/video/${video.id}/${slug}`} style={{textDecoration: 'none'}}>
-          <Card.Img variant="top" src="https://e0.pxfuel.com/wallpapers/303/523/desktop-wallpaper-gibson-les-paul-guitar.jpg" />
+          <Card.Img variant="top" src={imageSrc} />
           </a>
           <Card.Body>
             <Card.Title>{title}</Card.Title>
